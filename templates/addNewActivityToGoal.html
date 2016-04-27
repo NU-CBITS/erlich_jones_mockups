@@ -1,0 +1,59 @@
+<ion-view title="Add new activity to goal">
+    <ion-content overflow-scroll="true" padding="true" class="has-header">
+        <div class="button-bar"></div>
+        <form class="list"></form>
+        <div class="button-bar"></div>
+        <div class="button-bar"></div>
+        <form class="list">
+            <label class="item item-select" name="date">
+                <span class="input-label">Date</span>
+                <select>
+                    <option>3/13/16</option>
+                </select>
+            </label>
+            <label class="item item-select" name="type">
+                <span class="input-label">Type</span>
+                <select>
+                    <option>Strength</option>
+                    <option>Stretching</option>
+                    <option>Lifestyle</option>
+                    <option>Cardio</option>
+                </select>
+            </label>
+            <label class="item item-select" name="name">
+                <span class="input-label">Name</span>
+                <select>
+                    <option>Go for a walk</option>
+                    <option>More unadded options</option>
+                </select>
+            </label>
+            <label class="item item-select" name="intensity">
+                <span class="input-label">Intensity</span>
+                <select>
+                    <option>Light</option>
+                    <option>Moderate</option>
+                    <option>Vigorous</option>
+                </select>
+            </label>
+            <label class="item item-select" name="timeOfDay">
+                <span class="input-label">Time of Day</span>
+                <select>
+                    <option>Morning</option>
+                    <option>Afternoon</option>
+                    <option>Evening</option>
+                </select>
+            </label>
+            <ion-item class="range range-positive">Repetitions
+                <input type="range" value="50" min="0" max="100" name="repetitions">
+            </ion-item>
+            <ion-item class="range range-positive">Weight (lbs)
+                <input type="range" value="50" min="0" max="300" name="weight_in_lbs">
+            </ion-item>
+            <ion-item class="range range-positive">Duration (minutes)
+                <input type="range" value="50" min="0" max="100">
+            </ion-item>
+        </form>
+        <a ui-sref="menu.addAGoal" id="addNewActivityToGoal-button12" class="button button-positive  button-block">Finish and add a new goal</a>
+        <form class="list"></form>
+    </ion-content>
+</ion-view>
